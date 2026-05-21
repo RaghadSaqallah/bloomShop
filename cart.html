@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>your cart</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-['Lobster'] ">
+
+    <header class="text-[#e4098d]">
+        <nav class="mx-auto w-[80%] flex items-center justify-between py-5">
+
+            <div>
+                <a href="index.html" class="text-3xl font-semibold">Bloom</a>
+            </div>
+            <div class=" menu relative">
+
+                <button class="md:hidden btn-list   cursor-pointer"><i class="fas fa-bars"></i></button>
+
+                <ul
+                    class="ul-hidden absolute right-[-300px] top-8 md:static  md:right-0 md:top-0 md:flex md:gap-10 text-lg transition-all duration-300 ease-in-out bg-[#ffffff] w-[150px] z-index-10 md:w-auto rounded-[10px] pl-[20px]">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#flower">Flowers</a></li>
+                    <li><a href="index.html#bouquet">Bouquet</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section>
+        <h1 class="text-center text-2xl text-[#e4098d]">Made With Love</h1>
+
+    </section>
+
+    <section class="bg-[#fce4ec] py-[20px] mt-[50px]">
+        <div class=" grid grid-cols-1 md:grid-cols-3 gap-[25px] w-[90%] mx-auto lg:grid-cols-4" id="cart-container">
+        </div>
+    </section>
+
+    <footer class="bg-[#2f2d2d] mt-[60px] py-10 text-center text-white">
+
+        <h2 class="text-[#e4098d] text-4xl">Bloom Flower Shop</h2>
+
+        <div class="flex flex-col items-center justify-center gap-5 mt-3">
+            <p>Follow Us On Social Media</p>
+            <div class="flex items-center justify-center gap-5">
+                <a href=""
+                    class="text-xl hover:text-[#c20875] transition-colors duration-300 p-[10px] bg-[#4b4646] rounded-[50%]"><i
+                        class="fab fa-facebook"></i></a>
+                <a href=""
+                    class="text-xl hover:text-[#c20875] transition-colors duration-300 p-[10px] bg-[#4b4646] rounded-[50%]"><i
+                        class="fab fa-instagram"></i></a>
+                <a href=""
+                    class="text-xl hover:text-[#c20875] transition-colors duration-300 p-[10px] bg-[#4b4646] rounded-[50%]"><i
+                        class="fab fa-x"></i></a>
+                <a href=""
+                    class="text-xl hover:text-[#c20875] transition-colors duration-300 p-[10px] bg-[#4b4646] rounded-[50%]"><i
+                        class="fab fa-whatsapp "></i></a>
+            </div>
+            <p>&copy; 2026 Bloom. Flowers Shop.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+
+</html>

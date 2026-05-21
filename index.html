@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- #e4098d -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="font-['Lobster']">
+    <header class="text-[#e4098d]">
+        <nav class="mx-auto w-[80%] flex items-center justify-between py-5">
+
+            <div>
+                <a href="" class="text-3xl font-semibold">Bloom</a>
+            </div>
+            <div class=" menu relative">
+
+                <button class="md:hidden btn-list   cursor-pointer"><i class="fas fa-bars"></i></button>
+
+                <ul
+                    class="ul-hidden absolute right-[-300px] top-8 md:static  md:right-0 md:top-0 md:flex md:gap-10 text-lg transition-all duration-300 ease-in-out bg-[#ffffff] w-[150px] z-index-10 md:w-auto rounded-[10px] pl-[20px]">
+
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#flower">Flowers</a></li>
+                    <li><a href="#bouquet">Bouquet</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-[url('images/background.jpg')] bg-cover bg-top bg-no-repeat" id="home">
+            <div class="head flex flex-col items-center justify-center text-center gap-5 text-white py-70 bg-[rgba(0,0,0,.5)]  "
+                data-aos="fade-up">
+
+                <h1 class="text-7xl">
+                    Fresh Flowers
+                </h1>
+                <p class="text-2xl">
+                    Beautiful Flowers for everyone
+                </p>
+
+                <a href="order.html"
+                    class="bg-[#e4098d] text-white py-2 px-6 rounded-full hover:bg-[#c4087d] transition-colors duration-300 text-lg">
+                    Shop Now
+                </a>
+            </div>
+            </div>
+        </section>
+
+        <section class="mt-[40px] py-[40px]" id="flower" data-aos="fade-up">
+            <div class="card-wrapper grid grid-cols-1 md:grid-cols-3     gap-4 w-[80%] mx-auto lg:grid-cols-4">
+
+                <div
+                    class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[70%] mx-auto md:w-full">
+                    <img src=" images/card1.jpg" alt="" class="w-[100%] h-[200px] object-cover">
+                    <p class="text-center text-[#e4098d] text-lg font-semibold">red rose</p>
+                </div>
+
+                <div
+                    class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d]  flex flex-col items-center justify-center gap-10 pb-5 w-[70%] mx-auto md:w-full">
+                    <img src="images/card2.jpg" alt="" class="h-[200px] w-[100%] object-cover">
+                    <p class="text-center text-[#e4098d] text-lg font-semibold">Lavender</p>
+                </div>
+
+
+                <div
+                    class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[70%] mx-auto md:w-full">
+                    <img src="images/card3.jpg " alt="" class="h-[200px] w-[100%] object-cover">
+                    <p class="text-center text-[#e4098d] text-lg font-semibold">pink rose</p>
+                </div>
+
+
+
+                <div
+                    class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[70%] mx-auto md:w-full">
+                    <img src="images/card4.jpg " alt="" class="h-[200px] w-[100%] object-cover">
+                    <p class="text-center text-[#e4098d] text-lg font-semibold">Sunflower</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bg-[#fce4ec] py-[40px] mt-[40px]" id="bouquet">
+            <div class="flex flex-col gap-[20px] items-center justify-center " data-aos="fade-up">
+                <h2 class="text-center text-4xl">Create Your Bouquet</h2>
+                <p class=" text-lg">With Your Favorite Flowers</p>
+            </div>
+
+            <div class="card-wrapper grid grid-cols-1 md:grid-cols-3     gap-4 w-[80%] mx-auto lg:grid-cols-4 mt-[40px]"
+                data-aos="fade-up">
+
+                <div
+                    class="bg-white shadow-md rounded-lg transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[50%] mx-auto md:w-full">
+                    <div class="p-[10px] h-[80%]">
+                        <img src="images/b1.jpg" alt="" class="w-[100%] h-[100%] object-cover rounded-lg">
+                    </div>
+
+                    <p class="text-center text-[#e4098d] text-lg font-semibold">Collection of rose</p>
+                </div>
+
+
+                <div
+                    class="bg-white shadow-md rounded-lg transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[50%] mx-auto md:w-full">
+                    <div class="p-[10px] h-[80%]">
+                        <img src="images/b2.jpg" alt="" class="w-[100%] h-[100%] object-cover rounded-lg">
+                    </div>
+
+                    <p class="text-center text-[#e4098d] text-lg font-semibold">Collection of rose</p>
+                </div>
+
+
+
+
+                <div
+                    class="bg-white shadow-md rounded-lg transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[50%] mx-auto md:w-full">
+                    <div class="p-[10px] h-[80%]">
+                        <img src="images/b3.jpg" alt="" class="w-[100%] h-[100%] object-cover rounded-lg">
+                    </div>
+
+                    <p class="text-center text-[#e4098d] text-lg font-semibold">Collection of rose</p>
+                </div>
+
+
+
+
+                <div
+                    class="bg-white shadow-md rounded-lg transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[50%] mx-auto md:w-auto">
+                    <div class="p-[10px] h-[80%]">
+                        <img src="images/b4.jpg" alt="" class="w-[100%] h-[100%] object-cover rounded-lg">
+                    </div>
+
+                    <p class="text-center text-[#e4098d] text-lg font-semibold">Collection of rose</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mt-[40px]" id="contact">
+            <div class="flex flex-col gap-[20px] items-center justify-center ">
+                <h2 class="text-center text-4xl">Contact us</h2>
+
+                <form action="" id="send-form" class="  flex flex-col items-center justify-center gap-5 w-[100%] ">
+                    <input id="name" type="text" name="name" placeholder="Your Name"
+                        class="border border-gray-300 rounded-lg py-2 px-4 w-[50%] md:w-[30%] focus:outline-none ">
+                    <input id="email" type="email" name="email" required placeholder="Your Email"
+                        class="border border-gray-300 rounded-md py-2 px-4 w-[50%] md:w-[30%] focus:outline-none ">
+                    <textarea id="textarea" name="message" cols="30" rows="10" placeholder="Your Message"
+                        class="border border-gray-300 rounded-md py-2 px-4 w-[50%] md:w-[30%] focus:outline-none "></textarea>
+                    <button id="btn-send"
+                        class="bg-[#e4098d] text-white py-2 px-4 rounded-md hover:bg-[#c20875] transition-colors duration-300 cursor-pointer">
+                        Send
+                    </button>
+                </form>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer class="bg-[#2f2d2d] mt-[60px] py-10 text-center text-white">
+
+        <h2 class="text-[#e4098d] text-4xl">Bloom Flower Shop</h2>
+
+        <div class="flex flex-col items-center justify-center gap-5 mt-3">
+            <p>Follow Us On Social Media</p>
+            <div class="flex items-center justify-center gap-5">
+                <a href=""
+                    class="text-xl hover:text-[#c20875] transition-colors duration-300 p-[10px] bg-[#4b4646] rounded-[50%]"><i
+                        class="fab fa-facebook"></i></a>
+                <a href=""
+                    class="text-xl hover:text-[#c20875] transition-colors duration-300 p-[10px] bg-[#4b4646] rounded-[50%]"><i
+                        class="fab fa-instagram"></i></a>
+                <a href=""
+                    class="text-xl hover:text-[#c20875] transition-colors duration-300 p-[10px] bg-[#4b4646] rounded-[50%]"><i
+                        class="fab fa-x"></i></a>
+                <a href=""
+                    class="text-xl hover:text-[#c20875] transition-colors duration-300 p-[10px] bg-[#4b4646] rounded-[50%]"><i
+                        class="fab fa-whatsapp "></i></a>
+            </div>
+            <p>&copy; 2026 Bloom. Flowers Shop.</p>
+        </div>
+
+
+
+
+
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src=" js/script.js"></script>
+</body>
+
+</html>
