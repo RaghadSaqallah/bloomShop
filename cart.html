@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>your cart</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -42,7 +44,31 @@
     <section class="bg-[#fce4ec] py-[20px] mt-[50px]">
         <div class=" grid grid-cols-1 md:grid-cols-3 gap-[25px] w-[90%] mx-auto lg:grid-cols-4" id="cart-container">
         </div>
+        <div class="hidden" id="empty">
+
+            <div class="flex flex-col items-center justify-center gap-5 mt-10">
+                <div>
+                    <i class="fa-solid fa-cart-arrow-down text-7xl text-[#e4098d]"></i>
+                </div>
+                <div class="flex flex-col items-center justify-center gap-4 mt-3 text-[#6f7275]">
+                    <h1>Nothing In Your Cart </h1>
+                    <p>Your Cart Is Currently Empty</p>
+                    <a href="order.html"
+                        class="bg-[#e4098d] text-white py-2 px-6 rounded-full hover:bg-[#c4087d] transition-colors duration-300 text-lg">
+                        Buy Now
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
     </section>
+
+    <section class="">
+
+    </section>
+
 
     <footer class="bg-[#2f2d2d] mt-[60px] py-10 text-center text-white">
 
@@ -67,6 +93,8 @@
             <p>&copy; 2026 Bloom. Flowers Shop.</p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <script src="js/script.js"></script>
 

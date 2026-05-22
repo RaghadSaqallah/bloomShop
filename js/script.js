@@ -1,5 +1,5 @@
 
-AOS.init(); // هذا السطر ضروري جداً لتشغيل المكتبة
+AOS.init();
 
 
 // home page
@@ -141,10 +141,13 @@ if (pinkBtn && redBtn && whiteBtn && allBtn) {
 let counter = document.querySelectorAll(".counter");
 let count = 0;
 let span = document.querySelector(".count");
+
+
 if (span) {
     count = localStorage.getItem("cartCount") || 0;
     span.innerHTML = count;
 }
+
 counter.forEach((e) => {
     e.onclick = () => {
         span.innerHTML = ++count;
@@ -163,13 +166,37 @@ counter.forEach((e) => {
     };
 });
 
-let container = document.getElementById("cart-container");
+// cart page
+
+function removeItem(index) {
+    let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+    cartItems.splice(index, 1);
+
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+    localStorage.setItem("cartCount", cartItems.length);
+
+    location.reload();
+}
+let emptyCart = document.getElementById("empty");
+let container = document.getElementById("cart-container");  // wrapper div
 let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 if (container) {
-    cartItems.forEach(item => {
-        container.innerHTML += `
-              <div class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[50%] mx-auto md:w-full pink-card  "
+
+    if (cartItems.length === 0) {
+        emptyCart.classList.remove("hidden");
+    } else if (cartItems.length > 0) {
+        emptyCart.classList.add("hidden");
+
+        cartItems.forEach((item, index) => {
+            container.innerHTML += `
+              <div class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[50%] mx-auto md:w-full pink-card  relative"
                ">
+               <button onclick="removeItem(${index})" class="absolute top-2 right-2 bg-[#e4098d] text-white rounded-full w-6 h-6  cursor-pointer">
+               <i class="fa fa-trash"></i>
+
+            </button>
                 <img src="${item.img}" alt="" class="w-[100%] h-[100%] object-cover  ">
                 <div class="flex items-center gap-5 justify-between w-[80%]">
 
@@ -178,7 +205,8 @@ if (container) {
                 </div>
             </div>
         `;
-    });
+        });
+    }
 }
 
 
