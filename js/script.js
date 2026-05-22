@@ -9,19 +9,21 @@ const textarea = document.getElementById("textarea");
 const btnSend = document.getElementById("btn-send");
 const form = document.getElementById("send-form");
 const btnList = document.querySelector(".btn-list");
-const ul = document.querySelector(".ul-hidden");
+const ul = document.getElementById("nav-menu");
+const xBtn = document.getElementById("x");
 
 btnList.onclick = () => {
     if (ul.classList.contains("ul-hidden")) {
         ul.classList.remove("ul-hidden");
-        ul.classList.add("visible");
-        ul.style.right = "-100px";
+        xBtn.classList.remove("hidden");
+        ul.style.right = "0px";
     }
-    else if (ul.classList.contains("visible")) {
-        ul.classList.remove("visible");
-        ul.classList.add("ul-hidden");
-        ul.style.right = "-300px";
-    }
+};
+
+xBtn.onclick = () => {
+    ul.classList.add("ul-hidden");
+    ul.style.right = "-300px";
+    xBtn.classList.add("hidden");
 };
 
 if (form != null) {

@@ -15,27 +15,33 @@
 </head>
 
 <body class="font-['Lobster']">
-    <header class="text-[#e4098d]">
+    <header class="text-[#e4098d] ">
         <nav class="mx-auto w-[80%] flex items-center justify-between py-5">
 
             <div>
-                <a href="" class="text-3xl font-semibold">Bloom</a>
+                <a href="index.html" class="text-3xl font-semibold">Bloom</a>
             </div>
             <div class=" menu relative">
 
                 <button class="md:hidden btn-list   cursor-pointer"><i class="fas fa-bars"></i></button>
 
-                <ul
-                    class="ul-hidden absolute right-[-300px] top-8 md:static  md:right-0 md:top-0 md:flex md:gap-10 text-lg transition-all duration-300 ease-in-out bg-[#ffffff] w-[150px] z-index-10 md:w-auto rounded-[10px] pl-[20px]">
 
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#flower">Flowers</a></li>
-                    <li><a href="#bouquet">Bouquet</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul id="nav-menu"
+                    class="ul-hidden fixed right-[-300px] top-[14px] md:static  text-lg bg-white w-[150px]  md:w-auto rounded-[10px] pt-[50px]  transition-all duration-300 ease-in-out h-[100vh] flex flex-col gap-10  items-center md:gap-10 md:h-auto md:flex-row md:pt-0">
+
+                    <button
+                        class="absolute top-[10px] left-[4px]  rounded-full w-[20px] h-[20px] flex items-center justify-center cursor-pointer hidden "
+                        id="x">x</button>
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#flower">Flowers</a></li>
+                    <li><a href="index.html#bouquet">Bouquet</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
 
     <main>
         <section class="bg-[url('images/background.jpg')] bg-cover bg-top bg-no-repeat" id="home">
