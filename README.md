@@ -101,10 +101,5 @@ bloom/
 
 ---
 
-## 🐛 Bug Fixed
 
-- `removeItem()` in the cart was passing `item.index` (undefined) instead of the loop `index` from `forEach` — now correctly removes the selected item.
-
----
-
-© 2026 Bloom Flower Shop — Built with 💗
+© 2026 Raghad Saqallah — Built with 💗
