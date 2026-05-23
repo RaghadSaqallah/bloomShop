@@ -40,41 +40,46 @@
     </header>
 
 
+    <!-- heading section -->
     <section>
-        <div class="flex flex-col gap-[20px] items-center justify-center mt-[40px]">
+        <div class="flex flex-col gap-5 items-center justify-center mt-[40px]">
             <h1 class="text-4xl text-[#e4098d] font-semibold">Fresh Flowers</h1>
-            <p class="text-xl text-[#00000]">Only For You</p>
-    </section>
-    </div>
+            <p class="text-xl">Only For You</p>
+        </div>
+
     </section>
 
+
+    <!-- filter section -->
     <section>
-        <div class="w-[80%] mx-auto flex items-center gap-[30px] mt-[40px]">
+        <div class="w-[90%] mx-auto flex items-center gap-[30px] mt-[40px] ">
 
-
-            <button class="bg-[#e4098f] text-white w-[90px] h-[40px]  rounded cursor-pointer hover:bg-[#c10770]   "
+            <button class="bg-[#e4098f] text-white w-[90px] h-[40px]  rounded-md cursor-pointer hover:bg-[#c10770]   "
                 id="all">All</button>
-            <button class="bg-[#e4098f] text-white w-[90px] h-[40px]  rounded cursor-pointer hover:bg-[#c10770]   "
+            <button class="bg-[#e4098f] text-white w-[90px] h-[40px]  rounded-md cursor-pointer hover:bg-[#c10770]   "
                 id="white">White</button>
-            <button class="bg-[#e4098f] text-white w-[90px] h-[40px]  rounded cursor-pointer hover:bg-[#c10770] "
+            <button class="bg-[#e4098f] text-white w-[90px] h-[40px]  rounded-md cursor-pointer hover:bg-[#c10770] "
                 id="pink">Pink</button>
-            <button class="bg-[#e4098f] text-white w-[90px] h-[40px] rounded cursor-pointer hover:bg-[#c10770] "
+            <button class="bg-[#e4098f] text-white w-[90px] h-[40px] rounded-md cursor-pointer hover:bg-[#c10770] "
                 id="red">Red</button>
 
         </div>
 
     </section>
 
-    <section class="bg-[#fce4ec] py-[20px] mt-[50px]" data-aos="fade-up">
 
+    <section class="bg-[#fce4ec] py-[30px] mt-[50px]" data-aos="fade-up">
+
+        <!-- grid wrapper container -->
         <div class=" grid grid-cols-1 md:grid-cols-3 gap-[25px] w-[90%] mx-auto lg:grid-cols-4">
 
-            <div class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[50%] mx-auto md:w-full pink-card  "
+            <!-- cards start here -->
+            <div class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[60%] mx-auto md:w-full pink-card  "
                 data-name="pink rose" data-price="$30">
                 <img src="images/IMG-20260515-WA0111.jpg" alt="" class="w-[100%] h-[100%] object-cover  ">
                 <div class="flex items-center gap-5 justify-between w-[80%]">
 
-                    <strong class="text-center text-[#e4098d] text-md">$30</strong>
+                    <strong class="text-[#e4098d] text-md">$30</strong>
 
                     <button class="cursor-pointer bg-[#e4098d] w-[40px] h-[40px] rounded-[50%] counter"><i
                             class="fas fa-cart-plus" style="color: #ffff;"></i></button>
@@ -82,83 +87,71 @@
             </div>
 
 
-            <div class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[50%] mx-auto md:w-full white-card"
+            <div class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[60%] mx-auto md:w-full white-card"
                 data-name="rose collection" data-price="25">
                 <img src="images/IMG-20260515-WA0103.jpg" alt="" class="w-[100%] h-[100%] object-cover">
-                <div class="flex items-center gap-5 justify-between w-[80%]">
 
-                    <strong class="text-center text-[#e4098d] text-md">$25</strong>
-
+                <div class="flex items-center gap-5 justify-between w-[80%] ">
+                    <strong class="text-[#e4098d] text-md">$25</strong>
                     <button class="cursor-pointer bg-[#e4098d] w-[40px] h-[40px] rounded-[50%] counter"><i
                             class="fas fa-cart-plus" style="color: #ffff;"></i></button>
                 </div>
             </div>
 
 
-            <div class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[50%] mx-auto md:w-full white-card"
+            <div class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[60%] mx-auto md:w-full white-card"
                 data-name="white rose" data-price="35">
+
                 <img src="images/IMG-20260515-WA0100.jpg" alt="" class="w-[100%] h-[100%] object-cover  ">
                 <div class="flex items-center gap-5 justify-between w-[80%]">
-
-                    <strong class="text-center text-[#e4098d] text-md">$35</strong>
-
+                    <strong class=" text-[#e4098d] text-md">$35</strong>
                     <button class="cursor-pointer bg-[#e4098d] w-[40px] h-[40px] rounded-[50%] counter"><i
                             class="fas fa-cart-plus" style="color: #ffff;"></i></button>
                 </div>
             </div>
 
 
-
-
-            <div class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[50%] mx-auto md:w-full red-card"
+            <div class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[60%] mx-auto md:w-full red-card"
                 data-name="red rose" data-price="40">
+
                 <img src="images/IMG-20260515-WA0096.jpg" alt="" class="w-[100%] h-[100%] object-cover ">
                 <div class="flex items-center gap-5 justify-between w-[80%]">
-
-                    <strong class="text-center text-[#e4098d] text-md">$40</strong>
-
-                    <button class="cursor-pointer bg-[#e4098d] w-[40px] h-[40px] rounded-[50%] counter"><i
+                    <strong class="text-[#e4098d] text-md">$40</strong>
+                    <button class="cursor-pointer bg-[#e4098d] w-[40px] h-[40px] rounded-full counter"><i
                             class="fas fa-cart-plus" style="color: #ffff;"></i></button>
                 </div>
             </div>
 
 
-
-
-            <div class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[50%] mx-auto md:w-full pink-card"
+            <div class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[60%] mx-auto md:w-full pink-card"
                 data-name="pink rose" data-price="15">
+
                 <img src="images/IMG-20260515-WA0094.jpg" alt="" class="w-[100%] h-[100%] object-cover ">
                 <div class="flex items-center gap-5 justify-between w-[80%]">
-
-                    <strong class="text-center text-[#e4098d] text-md">$15</strong>
-
+                    <strong class=" text-[#e4098d] text-md">$15</strong>
                     <button class="cursor-pointer bg-[#e4098d] w-[40px] h-[40px] rounded-[50%] counter"><i
                             class="fas fa-cart-plus" style="color: #ffff;"></i></button>
                 </div>
             </div>
 
 
-
-            <div class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[50%] mx-auto md:w-full red-card"
+            <div class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[60%] mx-auto md:w-full red-card"
                 data-name="red rose" data-price="20">
+
                 <img src="images/IMG-20260515-WA0092.jpg" alt="" class="w-[100%] h-[100%] object-cover  ">
                 <div class="flex items-center gap-5 justify-between w-[80%]">
-
                     <strong class="text-center text-[#e4098d] text-md">$20</strong>
-
                     <button class="cursor-pointer bg-[#e4098d] w-[40px] h-[40px] rounded-[50%] counter"><i
                             class="fas fa-cart-plus" style="color: #ffff;"></i></button>
                 </div>
+                <!-- end the cards -->
             </div>
-
-
     </section>
 
     <a href="cart.html"> <button
-            class="cursor-pointer bg-[#e4098d] w-[50px] h-[50px] rounded-[50%] position-absolute fixed bottom-10 right-10 flex items-center justify-center"><i
-                class="fa-solid fa-cart-shopping text-2xl" style="color: white;"><span
+            class="cursor-pointer bg-[#e4098d] w-[50px] h-[50px] rounded-full  fixed bottom-10 right-10 "><i
+                class="fa-solid fa-cart-shopping text-2xl text-white"><span
                     class="absolute top-0 right-0 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center count">0</span></i></button></a>
-
 
     <footer class="bg-[#2f2d2d] mt-[60px] py-10 text-center text-white">
 

@@ -46,17 +46,21 @@
 
     </section>
 
-    <section class="bg-[#fce4ec] py-[20px] mt-[50px]">
-        <div class=" grid grid-cols-1 md:grid-cols-3 gap-[25px] w-[90%] mx-auto lg:grid-cols-4" id="cart-container">
-        </div>
-        <div class="hidden" id="empty">
 
+    <section class="bg-[#fce4ec] py-[30px] mt-[50px]">
+
+        <!-- grid wrapper and container -->
+        <div class=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 w-[90%] mx-auto " id="cart-container">
+        </div>
+
+        <!-- hidden state (empty cart) -->
+        <div class="hidden" id="empty">
             <div class="flex flex-col items-center justify-center gap-5 mt-10">
                 <div>
                     <i class="fa-solid fa-cart-arrow-down text-7xl text-[#e4098d]"></i>
                 </div>
                 <div class="flex flex-col items-center justify-center gap-4 mt-3 text-[#6f7275]">
-                    <h1>Nothing In Your Cart </h1>
+                    <h2>Nothing In Your Cart </h2>
                     <p>Your Cart Is Currently Empty</p>
                     <a href="order.html"
                         class="bg-[#e4098d] text-white py-2 px-6 rounded-full hover:bg-[#c4087d] transition-colors duration-300 text-lg">
@@ -66,10 +70,8 @@
 
             </div>
 
-
         </div>
     </section>
-
 
 
 

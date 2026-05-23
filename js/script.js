@@ -8,24 +8,29 @@ const email = document.getElementById("email");
 const textarea = document.getElementById("textarea");
 const btnSend = document.getElementById("btn-send");
 const form = document.getElementById("send-form");
-const btnList = document.querySelector(".btn-list");
+// end of var validator
+
+// start side list var
+const btnList = document.querySelector(".btn-list"); // font awesome list drop
 const ul = document.getElementById("nav-menu");
 const xBtn = document.getElementById("x");
 
+// side list 
 btnList.onclick = () => {
-    if (ul.classList.contains("ul-hidden")) {
-        ul.classList.remove("ul-hidden");
-        xBtn.classList.remove("hidden");
-        ul.style.right = "0px";
-    }
+    // if (ul.classList.contains("ul-hidden")) {
+    // ul.classList.remove("ul-hidden");
+    ul.style.right = "0px";
+    xBtn.classList.remove("hidden");
+    // }
 };
 
 xBtn.onclick = () => {
-    ul.classList.add("ul-hidden");
+    // ul.classList.add("ul-hidden");
     ul.style.right = "-300px";
     xBtn.classList.add("hidden");
 };
 
+// start form var
 if (form != null) {
     form.onsubmit = (e) => {
         if (name.value.length == 0) {
@@ -72,6 +77,7 @@ if (form != null) {
 
     }
 }
+// end of form validator
 
 
 // order page
@@ -89,50 +95,50 @@ let red = document.querySelectorAll(".red-card");
 // filter start
 if (pinkBtn && redBtn && whiteBtn && allBtn) {
     pinkBtn.onclick = () => {
-        pink.forEach((item) => {
-            item.classList.remove("hidden");
+        pink.forEach((e) => {
+            e.classList.remove("hidden");
         });
-        white.forEach((item) => {
-            item.classList.add("hidden");
+        white.forEach((e) => {
+            e.classList.add("hidden");
         });
-        red.forEach((item) => {
-            item.classList.add("hidden");
+        red.forEach((e) => {
+            e.classList.add("hidden");
         });
     }
 
     whiteBtn.onclick = () => {
-        pink.forEach((item) => {
-            item.classList.add("hidden");
+        pink.forEach((e) => {
+            e.classList.add("hidden");
         });
-        white.forEach((item) => {
-            item.classList.remove("hidden");
+        white.forEach((e) => {
+            e.classList.remove("hidden");
         });
-        red.forEach((item) => {
-            item.classList.add("hidden");
+        red.forEach((e) => {
+            e.classList.add("hidden");
         });
     }
 
     redBtn.onclick = () => {
-        pink.forEach((item) => {
-            item.classList.add("hidden");
+        pink.forEach((e) => {
+            e.classList.add("hidden");
         });
-        white.forEach((item) => {
-            item.classList.add("hidden");
+        white.forEach((e) => {
+            e.classList.add("hidden");
         });
-        red.forEach((item) => {
-            item.classList.remove("hidden");
+        red.forEach((e) => {
+            e.classList.remove("hidden");
         });
 
     }
     allBtn.onclick = () => {
-        pink.forEach((item) => {
-            item.classList.remove("hidden");
+        pink.forEach((e) => {
+            e.classList.remove("hidden");
         });
-        white.forEach((item) => {
-            item.classList.remove("hidden");
+        white.forEach((e) => {
+            e.classList.remove("hidden");
         });
-        red.forEach((item) => {
-            item.classList.remove("hidden");
+        red.forEach((e) => {
+            e.classList.remove("hidden");
         });
     }
 }
@@ -140,7 +146,7 @@ if (pinkBtn && redBtn && whiteBtn && allBtn) {
 
 
 // cart code
-let counter = document.querySelectorAll(".counter");
+let counter = document.querySelectorAll(".counter");  // array of cart font awesome
 let count = 0;
 let span = document.querySelector(".count");
 
@@ -156,12 +162,12 @@ counter.forEach((e) => {
         localStorage.setItem("cartCount", count);
 
         let card = e.closest(".card");
-
         let item = {
             name: card.dataset.name,
             price: card.dataset.price,
             img: card.querySelector("img").src
         };
+
         let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
         cartItems.push(item);
         localStorage.setItem("cartItems", JSON.stringify(cartItems));
@@ -181,8 +187,10 @@ function removeItem(index) {
 
     location.reload();
 }
+
+
 let emptyCart = document.getElementById("empty");
-let container = document.getElementById("cart-container");  // wrapper div
+let container = document.getElementById("cart-container");  // wrapper div المعمول عليه display grid
 let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 if (container) {
 
@@ -191,19 +199,17 @@ if (container) {
     } else if (cartItems.length > 0) {
         emptyCart.classList.add("hidden");
 
-        cartItems.forEach((item, index) => {
+        cartItems.forEach((e, index) => {
             container.innerHTML += `
-              <div class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[50%] mx-auto md:w-full pink-card  relative"
+              <div class="card bg-white shadow-md rounded-lg overflow-hidden transition-transform duration-300 hover:scale-102 hover:shadow-[0_0_10px_#e4098d] flex flex-col items-center justify-center gap-10 pb-5 w-[60%] mx-auto md:w-full pink-card relative"
                ">
                <button onclick="removeItem(${index})" class="absolute top-2 right-2 bg-[#e4098d] text-white rounded-full w-6 h-6  cursor-pointer">
                <i class="fa fa-trash"></i>
-
             </button>
-                <img src="${item.img}" alt="" class="w-[100%] h-[100%] object-cover  ">
+                <img src="${e.img}" alt="" class="w-[100%] h-[100%] object-cover  ">
                 <div class="flex items-center gap-5 justify-between w-[80%]">
-
-                    <strong class="text-center text-[#e4098d] text-md">$${item.price}</strong>
-                     <p class="text-center text-[#e4098d] text-md">${item.name}</p>          
+                    <strong class="text-center text-[#e4098d] text-md">$${e.price}</strong>
+                     <p class="text-center text-[#e4098d] text-md">${e.name}</p>          
                 </div>
             </div>
         `;
